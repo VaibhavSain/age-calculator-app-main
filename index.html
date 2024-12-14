@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <title>Age calculator app</title>
+</head>
+<body class="h-screen w-screen   bg-gray-300 absolute flex justify-center items-center">
+  <main>
+    <div class="bg-white  relative h-[32rem] w-[40rem] rounded-3xl">
+    <div class="pt-6 pl-6 inline-flex mt-6 ml-5">
+      <p class="font-semibold text-stone-500 relative bottom-7  left-7">Day</p>
+      <input type="number" id="input-day" class="w-28 h-11 pl-5 text-2xl font-semibold border rounded-lg" placeholder="DD" name = "day" >
+      <p class=" font-semibold text-stone-500 relative bottom-7 left-12">Month</p>
+      <input id="input-month" type="number" class="h-11 w-28 border font-semibold text-2xl pl-5  rounded-lg " placeholder="MM" >
+      <p class="font-semibold text-stone-500 relative bottom-7 left-12 ">Year</p>
+      <input  type="number" id="input-year" class="h-11 ml-5 w-28 border pl-5 text-2xl font-semibold rounded-lg" placeholder="YYYY">
+      </div>
+      <hr class=" mt-10 ml-16 mr-16">
+      <img src="icon-arrow.svg" onclick="ageCalc()" alt="image-button" class="h-16  absolute right-10 top-24 mt-1 hover:cursor-pointer     bg-purple-500 rounded-full">
+      <h1 class="text-8xl  font-semibold mb-6 ml-16"> <span id="years" class="text-purple-400 "> -- </span>  years</h1>
+      <h1 class="text-8xl font-semibold mb-6 ml-16"> <span id="months" class="text-purple-400"> -- </span>  months</h1>
+      <h1 class="text-8xl font-semibold mb-6 ml-16"> <span id="days" class="text-purple-400"> -- </span>   days</h1>
+    </div>
+  </main>
+</body>
+<script src="script.js"></script>
+</html>
